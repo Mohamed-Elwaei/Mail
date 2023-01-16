@@ -1,0 +1,22 @@
+textarea {
+    min-height: 400px;
+}
+.customLabel, .customInput {
+    position: relative;
+    display: block;
+    padding-right: 76px;
+    width: 174px;
+    box-sizing: border-box;
+}
+
+.customLabel::after {
+    content: '.' attr(data-domain);
+    position: absolute;
+    top: 4px;
+    left: 96px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+    display: block;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+}
